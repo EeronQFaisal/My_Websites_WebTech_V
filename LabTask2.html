@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lists, Links, Images and Attributes</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Learning to use Lists, Link, Images and Attributes in HTML">
+        <style>
+            .block{
+                background-color: skyblue;
+            }
+        </style> <!-- global attributes-->
+    </head>
+    <body>
+        <h1>Lists, Links, Images and Attributes</h1>
+        <h2>Contents: Click the content to jump to the section in the webpage!</h2>
+        <ol>
+            <li><a href="#LI">Lists</a>
+                <ol>
+                    <li><a href="#UL">Unordered Lists</a></li>
+                    <li><a href="#OL">Ordered Lists</a></li>
+                    <li><a href="#DL">Description Lists</a></li>
+                </ol>
+            </li>
+            <li><a href="#LK">Links</a></li>
+        </ol>
+        <h2 id="LI">Lists</h2>
+        <h3 id="UL">Unordered Lists</h3>
+        <p>Here we have an unordered list of popular programming languages:</p>
+        <ul>
+            <li>C-Style syntax
+                <ul>
+                    <li>C++</li>
+                    <li>C#</li>
+                    <li>C</li>
+                    <li>Java</li>
+                </ul>
+            </li>
+            <li>Implemented in C
+                <ul>
+                    <li>Python</li>
+                    <li>Ruby</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3 id="OL">Ordered Lists</h3>
+        <p>Here we have a step by step list of how to build a basic HTML website:</p>
+        <ol>
+            <li>Create the HTML file:
+                <ol>
+                    <li>Make a new text file</li>
+                    <li>Rename with .html extension</li>
+                    <li>Open with a text editor, preferably Visual Studio Code</li>
+                </ol>
+            </li>
+            <li>Define the basic skeleton of the site
+                <ol>
+                    <li>Declare Doctype</li>
+                    <li>Declare html
+                        <ol>
+                            <li>Declare head inside it</li>
+                            <li>Declare body</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li>Inside head:
+                <ol>
+                    <li>Define the title</li>
+                    <li>Add the meta charset with the character coding scheme</li>
+                    <li>Add the meta name description</li>
+                </ol>
+            </li>
+            <li>Inside the body, write HTML according to the website requirements</li>
+        </ol>
+
+        <h3 id="DL">Description Lists</h3>
+        <p>Here, we have a list describing the languages used in website creation:</p>
+        <dl>
+            <dt>HTML</dt>
+            <dd>- It is the bare bones skeleton of the website. Know as Hyper Text Markup Language. 
+                <br>- With HTML, we can include the basic features that make up the structure of a webpage, using various tags.
+                <br>- It allows manipulation of text, symbols, even icons <br>
+                <img src="images/HTML.png" alt="--- The HTML icon ---" width="120" height="160"><br>
+                Figure: HTML
+            </dd>
+            <dt>CSS</dt>
+            <dd>- It fleshes out the webpage. Used to make it visually appealing.
+                <br>- It allows the designer to manipulate colors, images, padding, etc.
+            </dd>
+            <dt>Javascript</dt>
+            <dd>- The scripting language used in most webpages. Used to implement logic in the webpage.
+                <br>- It handles control flows, loops, etc. 
+            </dd>
+        </dl>
+
+        <div class="block"> <!-- class called -->
+            <h3 id="LK">Links</h3>
+            <p>As an AIUBian, we often have to visit its website.<br>
+            <a href="https://www.aiub.edu/" target="_blank">Click here to visit AIUB's website</a>
+            </p>
+            <img src="images/AIUB_Logo.png" alt="--- AIUB Logo ---" width="200" height="200"><p><br>Figure: AIUB Logo</p>
+        </div>
+        
+    </body>
+</html>
