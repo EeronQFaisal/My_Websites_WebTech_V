@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Forms, Input Types, Fieldset and Legend</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="A website implementing HTML Forms and its Input Types, Fieldsets and Legends">
+    </head>
+    <body>
+        <h1>HTML Form</h1>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information:</legend>
+                <label for="fname">Full Name</label><br>
+                <input type="text" id="fname" name="fname" required><br><br>
+                <label for="email">Email Address</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+                <label for="dob">Date Of Birth</label><br>
+                <input type="date" id="dob" name="dob" required><br><br>
+                <label for="gender">Gender</label><br>
+                <div id="gender">
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="Female" required>
+                    <label for="female">Female</label><br>
+                </div><br>
+            </fieldset>
+            <fieldset>
+                <legend>Professional Information:</legend>
+                <label for="department">Department</label><br>
+                <select id="department" name="department" required>
+                    <option value="CSE">CSE</option>
+                    <option value="EEE">EEE</option>
+                    <option value="BBA">BBA</option>
+                    <option value="COE">COE</option>
+                </select><br><br>
+                <label for="skills">Skills</label><br>
+                <div id="skills">
+                    <input type="checkbox" id="programming" name="skills" value="Programming">
+                    <label for="programming">Programming</label><br>
+                    <input type="checkbox" id="presentation" name="skills" value="Presentation">
+                    <label for="presentation">Presentation</label><br>
+                    <input type="checkbox" id="research" name="skills" value="Research">
+                    <label for="research">Research</label><br>
+                </div><br>
+            </fieldset><br>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
