@@ -4,9 +4,32 @@
         <title>Basic HTML Structure and Text Formatting</title> <!-- This appears in the browser tab -->
         <meta charset="UTF-8"> <!-- The character code scheme followed -->
         <meta name="description" content="An overview of HTML Structure and Text Formatting"> <!-- appears in search engines -->
+        <link rel="stylesheet" href="CSS_Files/Lt-1.css">
+        <style>
+            h1, h2 {
+                color:darkgreen;
+            }
+            h3, h4 {
+                color:darkolivegreen;
+            }
+            h5, h6 {
+                color:darkslategray;
+            }
+            p {
+                color:darkblue;
+            }
+            .para1{
+                font-size: small;
+                font-family:'Courier New', Courier, monospace;
+            }
+            #para2{
+                font-size:medium;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+        </style>
     </head>
     <body>
-        <h1>Heading One: Largest, useful for headlines</h1>
+        <h1 style="background-color:aqua; font-family: 'Times New Roman', Times, serif ;">Heading One: Largest, useful for headlines</h1>
         <h2>Heading Two: Second Largest, useful for subtitles</h2>
         <h3>Heading Three: Third Largest, useful for author names</h3>
         <h4>Heading Four</h4>
@@ -14,11 +37,11 @@
         <h6>Heading Six</h6>
         <!-- Each heading is numbered in order of decreasing size and emphasis -->
 
-        <h4>Introduction</h4>
-        <p>This is a basic HTML website to familiarize ourselves with it's structure. 
+        <h4 style="color:darkred; font-size: large; padding-top: 10px;">Introduction</h4>
+        <p class="para1">This is a basic HTML website to familiarize ourselves with it's structure. 
             This is a basic paragraph.
         </p> <!-- The <p> tag creates paragraphs -->
-        <p>Now we will use some tags: <br><br>
+        <p id="para2">Now we will use some tags: <br><br>
             1.<strong>strong:</strong> This is used for <strong>important text.</strong>
             As we can see, it increased text opacity.<br>
             2.<em>em:</em> This is used for <em>emphasized text.</em>
