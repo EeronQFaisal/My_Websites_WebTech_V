@@ -5,44 +5,51 @@
         <meta charset="UTF-8">
         <meta name="description" content="Learning to use Lists, Link, Images and Attributes in HTML">
         <style>
-            .block{
+            body{
                 background-color: skyblue;
             }
         </style> <!-- global attributes-->
+        <link rel="stylesheet" href="CSS_Files/Lt-2.css">
     </head>
     <body>
-        <h1>Lists, Links, Images and Attributes</h1>
-        <h2>Contents: Click the content to jump to the section in the webpage!</h2>
-        <ol>
-            <li><a href="#LI">Lists</a>
-                <ol>
-                    <li><a href="#UL">Unordered Lists</a></li>
-                    <li><a href="#OL">Ordered Lists</a></li>
-                    <li><a href="#DL">Description Lists</a></li>
-                </ol>
-            </li>
-            <li><a href="#LK">Links</a></li>
-        </ol>
-        <h2 id="LI">Lists</h2>
-        <h3 id="UL">Unordered Lists</h3>
-        <p>Here we have an unordered list of popular programming languages:</p>
-        <ul>
-            <li>C-Style syntax
-                <ul>
-                    <li>C++</li>
-                    <li>C#</li>
-                    <li>C</li>
-                    <li>Java</li>
-                </ul>
-            </li>
-            <li>Implemented in C
-                <ul>
-                    <li>Python</li>
-                    <li>Ruby</li>
-                </ul>
-            </li>
-        </ul>
+        <h1 class="box1">Lists, Links, Images and Attributes</h1>
+        <div class="box2">
+            <h2>Contents: Click the content to jump to the section in the webpage!</h2>
+            <ol style="font-size: 1.2em;">
+                <li><a href="#LI">Lists</a>
+                    <ol>
+                        <li><a href="#UL">Unordered Lists</a></li>
+                        <li><a href="#OL">Ordered Lists</a></li>
+                        <li><a href="#DL">Description Lists</a></li>
+                    </ol>
+                </li>
+                <li><a href="#LK">Links</a></li>
+            </ol>
+        </div>
 
+        <div class="box3">
+            <h2 id="LI">Lists</h2>
+            <h3 id="UL">Unordered Lists</h3>
+            <p>Here we have an unordered list of popular programming languages:</p>
+            <ul>
+                <li>C-Style syntax
+                    <ul>
+                        <li>C++</li>
+                        <li>C#</li>
+                        <li>C</li>
+                        <li>Java</li>
+                    </ul>
+                </li>
+                <li>Implemented in C
+                    <ul>
+                        <li>Python</li>
+                        <li>Ruby</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="box3">
         <h3 id="OL">Ordered Lists</h3>
         <p>Here we have a step by step list of how to build a basic HTML website:</p>
         <ol>
@@ -73,7 +80,9 @@
             </li>
             <li>Inside the body, write HTML according to the website requirements</li>
         </ol>
+        </div>
 
+        <div class="box4">
         <h3 id="DL">Description Lists</h3>
         <p>Here, we have a list describing the languages used in website creation:</p>
         <dl>
@@ -93,8 +102,9 @@
                 <br>- It handles control flows, loops, etc. 
             </dd>
         </dl>
+        </div>
 
-        <div class="block"> <!-- class called -->
+        <div class="box5"> <!-- class called -->
             <h3 id="LK">Links</h3>
             <p>As an AIUBian, we often have to visit its website.<br>
             <a href="https://www.aiub.edu/" target="_blank">Click here to visit AIUB's website</a>
