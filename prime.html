@@ -6,6 +6,8 @@
 <body>
  
 <h2>Check Browser Console Output</h2>
+
+<p id="prime">Hello!</p>
  
 <script> 
 var num = 29;
@@ -18,12 +20,18 @@ for (var i = 2; i < num; i++) {
   }
 }
  
-if (isPrime) {
+if (isPrime) { 
   console.log(num + " is a prime number.");
+  document.getElementById("prime").textContent = num + " is a prime number";
 } else {
   console.log(num + " is not a prime number.");
+  document.getElementById("prime").textContent = num + " is not a prime number"; 
 }
+
 </script> <!--Check whether prime number-->
+
+<p id="largestNumber"></p>
+<p id="FiveFactorial"></p>
 
 <script>
   //largest number checker
@@ -39,7 +47,7 @@ if (isPrime) {
     largest = num3;
   }
   console.log("The largest number (out of 15, 22, 8) is: " + largest);
-
+  document.getElementById("largestNumber").textContent = "The largest number (out of 15, 22, 8) is: " + largest;
   //factorial of 5
   var num = 5;
   var factorial = 1;
@@ -47,6 +55,7 @@ if (isPrime) {
     factorial *= i;
   }
   console.log("Factorial of " + num + " is: " + factorial);
+  document.getElementById("FiveFactorial").textContent = "Factorial of " + num + " is: " + factorial;
 </script><!--Largest number checker and factorial of 5-->
 
 <script>
