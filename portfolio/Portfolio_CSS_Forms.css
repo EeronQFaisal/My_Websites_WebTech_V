@@ -1,0 +1,65 @@
+main {
+    flex-direction: column;
+}
+main article {
+    width: 90%;
+}
+label {
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+article form div[class=form-row]{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.form-row div[class=left], div[class=right] {
+    width: 50%;
+    margin: 10px;
+    padding: 5px;
+}
+.buttons {
+    padding: 5px;
+}
+button {
+    border: none;
+    color: white;
+    background-color: #7192e8;
+    font-family: 13px;
+    padding: 12px;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #415978;
+}
+
+input[type=text], input[type=email], textarea {
+    width: 95%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+    background-color: lightblue;
+}
+
+textarea {
+    height: auto;
+}
+
+@media screen and (max-width: 780px) {
+    article form div[class=form-row]{
+        width: 100%;
+        display: block;
+    }
+
+    .form-row div[class=left], div[class=right] {
+        width: 100%;
+        margin: 10px;
+        padding: 5px;
+    }
+
+}
